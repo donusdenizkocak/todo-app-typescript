@@ -1,9 +1,9 @@
 
 interface IListItem{
- item:TodoType[]; 
+ item:TodoType; 
 }
 
- const TodoListItem :React.FC<ITodoList> = ({item}) => {
+ const TodoListItem :React.FC<IListItem> = ({item}) => {
   return (
    <li>
    {item.isDone ? <p className="checked">{item.task}</p>
