@@ -18,7 +18,7 @@ const getTodos =async()=>{
       console.log(error)  
     }
 }
-const addTodo:AddFn = async(text)  {
+const addTodo:AddFn = async(text) => {
    const newTodo={
     task:text,
     isDone:false
