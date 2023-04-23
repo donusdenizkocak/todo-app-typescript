@@ -20,27 +20,7 @@ const useAxios = () => {
         }
     };
 
-    // const toggleTodo: ToggleFn = async (item) => {
-    //     const updateTodo = {
-    //         id: item.id,
-    //         task: item.task,
-    //         isDone: !item.isDone
-    //     }
-    //     const { data } = await axios.put<TodoType>(`https://634ac3fc5df952851418480f.mockapi.io/api/todos/${item.id}`, updateTodo)
-    //     if (data) {
-    //         getTodos()
-    //     }
-    // }
-//     const deleteTodo: DeleteFn = async (id) => {
-//         try {
-//             const res = await axios.delete<TodoType>(`https://634ac3fc5df952851418480f.mockapi.io/api/todos/${id}`)
-//             console.log(res)
-//             getTodos()
-//         } catch (error) {
-//             console.log(error)
-//         }
-//     }
-//     return { todos, getTodos, addTodo, deleteTodo, toggleTodo }
+
  }
 
 export default useAxios
