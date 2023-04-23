@@ -31,6 +31,10 @@ const addTodo:AddFn = async(text) => {
    }
 }
 
+const toggleTodo = async() => {
+
+}
+
 useEffect(() => {
  getTodos()
 }, [])
