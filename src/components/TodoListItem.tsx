@@ -1,6 +1,7 @@
 
 interface IListItem{
  item:TodoType; 
+ toggleTodo:ToggleFn
 }
 
  const TodoListItem :React.FC<IListItem> = ({item}) => {
