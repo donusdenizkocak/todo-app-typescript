@@ -31,8 +31,13 @@ const addTodo:AddFn = async(text) => {
    }
 }
 
-const toggleTodo = async() => {
-
+const toggleTodo = async(item) => {
+try {
+  await axios.put(`${url}/${item.id}`, {...item,isDone:!item.isDone})
+  getTodos()
+} catch (error) {
+  console.log(error)
+}
 }
 
 useEffect(() => {
