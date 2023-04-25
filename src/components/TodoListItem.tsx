@@ -9,8 +9,8 @@ interface IListItem{
   return (
    <li >
     {item.isDone ? <p className="checked" onClick={()=>toggleTodo(item)}>{item.task}</p>
-   :<p>{item.task}</p>}
-    <span className="task-icons" onClick={()=>toggleTodo(item)} >✖️</span>
+   :<p onClick={()=>toggleTodo(item)}>{item.task}</p>}
+    <span className="task-icons" onClick={()=>deleteTodo(item.id)} >✖️</span>
    </li>
   )
 }
