@@ -57,7 +57,7 @@ useEffect(() => {
   return (
     <div className="main">
         <InputForm addTodo={addTodo}/>
-        <TodoList todos={todos} toggleTodo={toggleTodo}/>
+        <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo}/>
     </div>
   )
 }

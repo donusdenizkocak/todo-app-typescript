@@ -2,9 +2,10 @@
 interface IListItem{
  item:TodoType; 
  toggleTodo:ToggleFn;
+ deleteTodo:DeleteFn;
 }
 
- const TodoListItem :React.FC<IListItem> = ({item,toggleTodo}) => {
+ const TodoListItem :React.FC<IListItem> = ({item,toggleTodo,deleteTodo}) => {
   return (
    <li >
     {item.isDone ? <p className="checked" onClick={()=>toggleTodo(item)}>{item.task}</p>
