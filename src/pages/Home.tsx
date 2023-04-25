@@ -41,10 +41,10 @@ try {
 }
 const toggleTodo = async(item) =>{
 try {
-  await axios.post(url,newTodo)
-  getTodos()
+  await axios.put(`${url}/${item.id}`,{...item,isDone:!item.isDone})
+  getTodos();
 } catch (error) {
-  
+  console.log(error)
 }
 }
 
