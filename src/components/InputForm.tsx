@@ -20,7 +20,7 @@ const InputForm:React.FC<IInputForm> = ({addTodo}) => {
         type="text"
         maxLength={40}
           value={task}
-          onChange={(e)=>setTask(e.target.value)}   
+         onChange={(e)=>setTask(e.target.value)}
       />
       <button
         className="btn-hover btn-color"
