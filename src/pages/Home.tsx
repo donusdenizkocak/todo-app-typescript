@@ -40,7 +40,12 @@ try {
 }
 }
 const toggleTodo = async(item) =>{
-
+try {
+  await axios.post(url,newTodo)
+  getTodos()
+} catch (error) {
+  
+}
 }
 
 useEffect(() => {
