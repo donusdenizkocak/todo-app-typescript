@@ -1,12 +1,12 @@
 
 interface IListItem{
  item:TodoType; 
- toggleTodo:ToggleFn
+ toggleTodo:ToggleFn;
 }
 
- const TodoListItem :React.FC<IListItem> = ({item}) => {
+ const TodoListItem :React.FC<IListItem> = ({item,toggleTodo}) => {
   return (
-   <li>
+   <li onClick={()=>toggleTodo(item)}>
     {item.isDone ? <p className="checked">{item.task}</p>
    :<p>{item.task}</p>}
     <span className="task-icons"  >✖️</span>
