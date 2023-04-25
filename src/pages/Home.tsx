@@ -40,6 +40,15 @@ try {
 }
 }
 
+const deleteTodo:DeleteFn =async(id)=>{
+try {
+  await axios.delete(`${url}/${id}`)
+  getTodos()
+} catch (error) {
+  console.log(error)
+}
+}
+
 useEffect(() => {
  getTodos()
 }, [])
